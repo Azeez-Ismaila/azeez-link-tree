@@ -1,8 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Links() {
   return (
-    <div>
+    <div className="text-center">
+      <Link to="/contact">
+        <a
+          href="https://twitter.com/Mr_Zyzie"
+          className="mx-auto block py-4 my-4 rounded bg-gray-100 w-11/12 h-"
+          id="contact"
+        >
+          Contact
+        </a>
+      </Link>
       <a
         href="https://twitter.com/Mr_Zyzie"
         className="mx-auto block py-4 my-4 rounded bg-gray-100 w-11/12 h-"

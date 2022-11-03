@@ -2,14 +2,19 @@ import "./App.css";
 import Footer from "./Footer";
 import Links from "./Links";
 import Profile from "./Profile";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Contact from "./Contact";
 
 function App() {
   return (
-    <div className="App font-bold">
-      <Profile />
-      <Links />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
