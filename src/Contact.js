@@ -2,13 +2,13 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-start gap-3 p-6 font-mono md:w-9/12 md:mx-auto">
+    <div className="flex flex-col items-start p-6 gap-3 md:w-9/12 md:mx-auto">
       <h1 className=" font-bold text-4xl py-2">Contact Me</h1>
       <p className="">
         Hi there, contact me to ask me about anything you have in mind.
       </p>
-      <span className="w-full md:flex gap-2">
-        <span className="w-full">
+      <span className="w-full md:flex md:gap-4  h-3/5">
+        <span className="w-full flex gap-3 flex-col">
           <label htmlFor="first_name">First name</label>
           <input
             type="text"
@@ -18,7 +18,7 @@ const Contact = () => {
             className=" w-full border-gray-100 border-4 rounded-lg p-2"
           />
         </span>
-        <span className="w-full">
+        <span className="w-full  flex gap-3 flex-col">
           <label htmlFor="last_name">Last name</label>
           <input
             type="text"
